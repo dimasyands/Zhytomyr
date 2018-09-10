@@ -101,6 +101,37 @@
       <h2 class="header-s2">Зацікавились?</h2>
       <p class="text-s2">Вкажіть дату приїзду і ми допоможемо Вам підібрати готель</p>
       <button class="modal-open" type="button">Пошук готелю в Житомирі</button>
+      <section class="modal-hotel">
+          <form class="hotel-search" action="http://echo.htmlacademy.ru" method="post">
+            <p class="hotel-date">
+              <label for="hotel-date-from">Дата заїзду</label>
+              <input id="hotel-date-from" type="date" name="date" placeholder="24 cічня 2018">
+            </p>
+            <p class="hotel-date">
+              <label for="hotel-date-to">Дата виїзду</label>
+              <input id="hotel-date-to" type="date" name="date" placeholder="24 cічня 2018">
+            </p>
+            <div class="hotel-people-wrapper">
+              <div class="hotel-people">
+                <label for="hotel-people-adult">Дорослі</label>
+                <div class="input-number">
+                  <div class="plus">+</div>
+                  <input id="hotel-people-adult" type="text" name="adult" placeholder="2">
+                  <div class="minus">-</div>
+                </div>
+              </div>
+              <div class="hotel-people">
+                <label for="hotel-people-child">Діти</label>
+                <div class="input-number">
+                  <p class="plus">+</p>
+                  <input id="hotel-people-child" type="text" name="child" placeholder="0">
+                  <p class="minus">-</p>
+                </div>
+              </div>
+            </div>
+            <button class="modal-button" type="submit">Пошук</button>
+          </form>
+        </section>
     </section>
     <div class="map">
       <img src="source/img/map.jpg" alt="map">
@@ -128,12 +159,14 @@
 
     <p class="copyright">
       <b>Міська рада Житомира</b>
-      <a class="button" href="http://zt-rada.gov.ua/">Перейти на сайт</a>
+      <a href="http://zt-rada.gov.ua/">Перейти на сайт</a>
     </p>
   </footer>
 
-  </body>
 
+
+  </body>
+</html>
 
 
 

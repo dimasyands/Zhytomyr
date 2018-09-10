@@ -315,7 +315,126 @@ button {
   color: #ffffff;
   padding: 30px 0;
   min-width: 574px;
+}
 
+.modal-hotel{
+  display:inline-block;
+  width: 574px;
+  height: 396px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  margin-top: 234px;
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 800;
+  margin: 55px;
+}
+
+.hotel-date {
+  display: flex;
+  width: 458px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.hotel-people {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.hotel-people-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hotel-search input{
+  font: inherit;
+  flex-grow: 1;
+  height: 38px;
+
+  border: 2px solid #f2f2f2;
+  background: #f2f2f2;
+  margin-left: 5px;
+}
+
+.hotel-search input:hover{
+  font: inherit;
+
+  border: 2px solid #ebebeb;
+  background: #ebebeb;
+}
+
+.hotel-search input:focus{
+  font: inherit;
+
+  border: 2px solid #ebebeb;
+  background: #ffffff;
+}
+
+#hotel-date-to::-webkit-calendar-picker-indicator,
+#hotel-date-from::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url(../svg/calendar.svg) no-repeat center;
+  background-size: contain;
+}
+
+#hotel-date-to::-webkit-datetime-edit-text,
+#hotel-date-from::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+.input-number input{
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  text-align: center;
+}
+
+.modal-button {
+  padding: 0;
+  min-width: 0;
+  width: 458px;
+  background: #81b3d2;
+  height: 58px;
+  margin-top: 55px;
+}
+
+.input-number {
+  display: flex;
+  width: 115px;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.plus,
+.minus {
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  cursor: pointer;
+}
+
+.plus:hover,
+.minus:hover {
+  background: #ebebeb;
+  cursor: pointer;
+}
+
+.hotel-people-adult,
+.hotel-people-child {
+  flex-grow: 1;
 }
 
 .visually-hidden {
