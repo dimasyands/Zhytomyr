@@ -1,3 +1,3 @@
 #Zhytomyr
-TML/CSS task
+HTML/CSS task
 [Live Demo](https://dimasyands.github.io/Zhytomyr/)
